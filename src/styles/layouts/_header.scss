@@ -52,6 +52,9 @@
   &__call-info {
     position: relative;
     cursor: pointer;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
   }
   &__call-info::before {
     content: '';
@@ -67,7 +70,6 @@
     font-weight: 500;
     font-size: 14px;
     color: var(--black-title);
-    padding-bottom: 4px;
   }
   &__call-number {
     color: var(--brand-green);

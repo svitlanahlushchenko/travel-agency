@@ -187,6 +187,14 @@ li {
 .header__call-info {
   position: relative;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .header__call-info::before {
   content: "";
@@ -202,7 +210,6 @@ li {
   font-weight: 500;
   font-size: 14px;
   color: var(--black-title);
-  padding-bottom: 4px;
 }
 .header__call-number {
   color: var(--brand-green);
