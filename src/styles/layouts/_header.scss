@@ -1,0 +1,79 @@
+.header {
+  &__container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-around;
+  }
+  &__menu {
+    display: flex;
+    gap: 60px;
+  }
+  &__link {
+    line-height: 2;
+    font-size: 15px;
+    color: var(--black-title);
+    font-family: 'Rubik';
+    cursor: pointer;
+    &:hover {
+      color: var(--brand-green);
+      transition: color 0.3s ease;
+    }
+  }
+  &__contacts {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  &__icons {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__icon {
+    width: 27px;
+    height: 27px;
+    fill: var(--black-title);
+    cursor: pointer;
+  }
+  &__call {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    line-height: 1;
+  }
+  &__call-icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--brand-green);
+    cursor: pointer;
+  }
+  &__call-info {
+    position: relative;
+    cursor: pointer;
+  }
+  &__call-info::before {
+    content: '';
+    width: 1px;
+    height: 35px;
+    left: -10px;
+    position: absolute;
+    margin-right: 10px;
+    background-color: var(--gray-text);
+  }
+  &__call-text {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black-title);
+    padding-bottom: 4px;
+  }
+  &__call-number {
+    color: var(--brand-green);
+    font-family: 'Rubik';
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
