@@ -219,6 +219,65 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className='specials-section container'>
+        <div className='specials-section__container'>
+          <h2 className='section-title'>Display Special Deals</h2>
+          <p className='specials-section__text'>
+            Etiam ac tortor id purus commodo vulputate. Vestibulum porttitor
+            erat felis and sed vehicula tortor malesuada gravida. Mauris
+            volutpat enim quis.
+          </p>
+          <div className='specials-section__sales'>
+            <div className='specials-section__column-sale'>
+              <div className='specials-section__orange-sale'>
+                <img
+                  className='specials-section__orange-photo'
+                  src='/images/people-around-fire.jpg'
+                  alt='People around a fire'
+                ></img>
+                <img
+                  src='/images/orange-sale.png'
+                  alt='Orange sales'
+                  className='specials-section__orange-back'
+                ></img>
+                <button className='specials-section__orange-button'>
+                  View This Trip
+                </button>
+              </div>
+
+              <div className='specials-section__blue-sale'>
+                <img
+                  src='/images/women-on-boat.jpg'
+                  alt='Women on boat'
+                  className='specials-section__blue-photo'
+                ></img>
+                <img
+                  src='/images/blue-sales.png'
+                  alt='Blue Sales'
+                  className='specials-section__blue-back'
+                ></img>
+                <button className='specials-section__blue-button'>
+                  View This Trip
+                </button>
+              </div>
+            </div>
+
+            <div className='specials-section__green-sale'>
+              <img
+                src='/images/pair-sales.jpg'
+                alt='Perfect pair'
+                className='specials-section__green-photo'
+              ></img>
+              <img
+                src='/images/green-sales.png'
+                alt='green-sales'
+                className='specials-section__green-back'
+              ></img>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 };

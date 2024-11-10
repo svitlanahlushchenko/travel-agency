@@ -129,6 +129,72 @@ li {
   border: 1px solid var(--brand-green);
 }
 
+.location-section__button {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(99, 171, 69, 0.6);
+  padding: 10px 15px;
+  font-family: "Rubik";
+  font-size: 14;
+  line-height: 1;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid rgba(99, 171, 69, 0.6);
+  cursor: pointer;
+}
+.location-section__button:hover {
+  color: var(--brand-green);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(99, 171, 69, 0.6);
+}
+
+.specials-section__orange-button {
+  position: absolute;
+  top: 66%;
+  left: 5%;
+  color: white;
+  background-color: var(--brand-green);
+  padding: 10px 15px;
+  font-family: "Rubik";
+  font-size: 14;
+  line-height: 1;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid var(--brand-green);
+  cursor: pointer;
+}
+.specials-section__orange-button:hover {
+  color: var(--brand-green);
+  background-color: white;
+  border: 1px solid var(--brand-green);
+}
+
+.specials-section__blue-button {
+  position: absolute;
+  top: 66%;
+  right: 12%;
+  color: white;
+  background-color: var(--brand-green);
+  padding: 10px 15px;
+  font-family: "Rubik";
+  font-size: 14;
+  line-height: 1;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  border: 1px solid var(--brand-green);
+  cursor: pointer;
+}
+.specials-section__blue-button:hover {
+  color: var(--brand-green);
+  background-color: white;
+  border: 1px solid var(--brand-green);
+}
+
 .section-title {
   font-family: "Rubik";
   font-size: 50px;
@@ -863,26 +929,77 @@ li {
   color: var(--black-title);
   border-radius: 0 4px 4px 0;
 }
-.location-section__button {
-  position: absolute;
-  top: 50%;
-  right: 25px;
-  color: rgba(255, 255, 255, 0.6);
-  background-color: rgba(99, 171, 69, 0.6);
-  padding: 10px 15px;
-  font-family: "Rubik";
-  font-size: 14;
-  line-height: 1;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  border: 1px solid rgba(99, 171, 69, 0.6);
-  cursor: pointer;
+
+.specials-section__container {
+  padding: 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.location-section__button:hover {
-  color: var(--brand-green);
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(99, 171, 69, 0.6);
+.specials-section__text {
+  max-width: 700px;
+  text-align: center;
+  padding: 10px 0 30px;
+}
+.specials-section__sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.specials-section__column-sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.specials-section__green-sale, .specials-section__blue-sale, .specials-section__orange-sale {
+  position: relative;
+}
+.specials-section__orange-back {
+  position: absolute;
+  border-radius: 8px;
+  bottom: 0;
+  left: 0;
+}
+.specials-section__orange-button {
+  position: absolute;
+  bottom: 60px;
+}
+.specials-section__blue-photo {
+  border-radius: 8px;
+}
+.specials-section__blue-back {
+  position: absolute;
+  border-radius: 8px;
+  right: 0;
+  bottom: 0;
+}
+.specials-section__green-photo {
+  max-height: 600px;
+  border-radius: 10px;
+}
+.specials-section__green-back {
+  position: absolute;
+  bottom: 0;
+  border-radius: 8px;
 }
 
 .hero-section {
