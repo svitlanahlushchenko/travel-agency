@@ -3,10 +3,11 @@ import '../css/App.css';
 
 const Blog = () => {
   return (
-    <div>
-      <h1>Blog</h1>
-      <p>This is the About page.</p>
-    </div>
+    <section>
+      <section className='hero-section big-container'>
+        <h2 className='hero-section__title'>Blog</h2>
+      </section>
+    </section>
   );
 };
 

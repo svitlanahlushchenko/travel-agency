@@ -1,0 +1,18 @@
+.hero-section {
+  background-image: url('/public/images/hero-secondary-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &__title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.3;
+    color: white;
+    padding: 120px 0 170px;
+  }
+}
