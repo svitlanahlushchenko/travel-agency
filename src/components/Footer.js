@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='footer__book'>
           <img src='/images/main-logo-white.svg' alt='Logo' />
           <h2 className='footer__title'>Want to Take Tour Packages?</h2>
-          <button className='book-button'>Book A Tour</button>
+          <button className='button'>Book A Tour</button>
         </div>
         <div className='footer__links'>
           <h3 className='footer__secondary-title'>Quick Link</h3>

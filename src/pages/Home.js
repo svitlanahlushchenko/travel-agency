@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/App.css';
 import HotelsSlider from '../components/Slider';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -153,7 +154,69 @@ const Home = () => {
           <div className='hotels-section__slider'>
             <HotelsSlider />
           </div>
-          <button className='book-button'>View All Hotel</button>
+          <button className='button'>View All Hotel</button>
+        </div>
+      </section>
+
+      <section className='location-section big-container'>
+        <div className='location-section__container'>
+          <div className='location-section__info'>
+            <div className='location-section__text'>
+              <h2 className='section-title'>Leading Tour Location</h2>
+              <p>
+                Etiam ac tortor id purus commodo vulputate. Vestibulum porttitor
+                erat felis and sed vehicula tortor malesuada gravida. Mauris
+                volutpat enim quis.
+              </p>
+            </div>
+            <Link to='/Destination'>
+              <button className='button'>All Destination</button>
+            </Link>
+          </div>
+
+          <div className='location-section__cards'>
+            <div className='location-section__card'>
+              <h3 className='location-section__card-title'>Sweden</h3>
+              <p className='location-section__tours-left'>4 Tour</p>
+              <img src='/images/Sweden.jpg' alt='Sweden'></img>
+              <button className='location-section__button'>View Details</button>
+            </div>
+
+            <div className='location-section__card'>
+              <h3 className='location-section__card-title'>Japan</h3>
+              <p className='location-section__tours-left'>2 Tour</p>
+              <img src='/images/Japan.jpg' alt='Japan'></img>
+              <button className='location-section__button'>View Details</button>
+            </div>
+
+            <div className='location-section__card'>
+              <h3 className='location-section__card-title'>India</h3>
+              <p className='location-section__tours-left'>1 Tour</p>
+              <img src='/images/India.jpg' alt='India'></img>
+              <button className='location-section__button'>View Details</button>
+            </div>
+
+            <div className='location-section__card'>
+              <h3 className='location-section__card-title'>Brazil</h3>
+              <p className='location-section__tours-left'>1 Tour</p>
+              <img src='/images/Brazil.jpg' alt='Brazil'></img>
+              <button className='location-section__button'>View Details</button>
+            </div>
+
+            <div className='location-section__card'>
+              <h3 className='location-section__card-title'>Australia</h3>
+              <p className='location-section__tours-left'>1 Tour</p>
+              <img src='/images/Australia.jpg' alt='Australia'></img>
+              <button className='location-section__button'>View Details</button>
+            </div>
+
+            <div className='location-section__card'>
+              <h3 className='location-section__card-title'>Spain</h3>
+              <p className='location-section__tours-left'>0 Tour</p>
+              <img src='/images/Spain.jpg' alt='Spain'></img>
+              <button className='location-section__button'>View Details</button>
+            </div>
+          </div>
         </div>
       </section>
     </section>

@@ -6,15 +6,17 @@
 @import './components/section-title';
 @import './components/slider';
 
-@import './layouts/about-page';
-@import './layouts/blog-page';
-@import './layouts/contact-page';
 @import './layouts/container';
-@import './layouts/destination-page';
-@import './layouts/faqs-page';
 @import './layouts/footer';
 @import './layouts/header';
 @import './layouts/hero-section';
 @import './layouts/hotels-section';
 @import './layouts/info-section';
-@import './layouts/tours-page';
+@import './layouts/location-section';
+
+@import './pages/about-page';
+@import './pages/blog-page';
+@import './pages/contact-page';
+@import './pages/destination-page';
+@import './pages/faqs-page';
+@import './pages/tours-page';

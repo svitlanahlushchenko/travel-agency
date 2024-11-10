@@ -113,7 +113,7 @@ const HotelsSlider = () => {
               <p className='accent-price'>
                 $126<span className=' crossed-price'>$160</span>
               </p>
-              <button className='book-button'>Check Availability</button>
+              <button className='button'>Check Availability</button>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@ const HotelsSlider = () => {
             <div className='price'>
               <p>1 Night, 2 Adults</p>
               <p className='accent-price'>$46</p>
-              <button className='book-button'>Check Availability</button>
+              <button className='button'>Check Availability</button>
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@ const HotelsSlider = () => {
             <div className='price'>
               <p>1 Night, 2 Adults</p>
               <p className='accent-price'>$120 </p>
-              <button className='book-button'>Check Availability</button>
+              <button className='button'>Check Availability</button>
             </div>
           </div>
         </div>
