@@ -1,0 +1,43 @@
+.hotels-section {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+  &__text {
+    padding: 10px 0 24px;
+    max-width: 700px;
+    text-align: center;
+  }
+  &__icons {
+    display: flex;
+    gap: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    &:hover {
+      fill: var(--brand-green);
+      color: var(--brand-green);
+    }
+  }
+  &__icon {
+    fill: black;
+    width: 24px;
+    height: 24px;
+  }
+  &__slider {
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden;
+  }
+}
