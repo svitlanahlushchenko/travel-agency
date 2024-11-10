@@ -13,7 +13,7 @@ const Header = () => {
               <Link to='/'>Home</Link>
             </li>
             <li className='header__link'>
-              <Link to='/about'>About</Link>
+              <Link to='/about'>About Us</Link>
             </li>
             <li className='header__link'>
               <Link to='/tours'>Tours</Link>

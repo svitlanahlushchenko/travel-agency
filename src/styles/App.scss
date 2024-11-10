@@ -2,6 +2,11 @@
 @import './utils/base';
 @import './utils/fonts';
 
+@import './components/buttons';
+@import './components/section-title';
+
 @import './layouts/container';
+@import './layouts/footer';
 @import './layouts/header';
 @import './layouts/hero-section';
+@import './layouts/info-section';

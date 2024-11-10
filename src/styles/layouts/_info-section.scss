@@ -1,0 +1,47 @@
+.info-section {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 120px 0;
+  }
+  &__description {
+    max-width: 630px;
+  }
+  &__advantages {
+    padding-top: 40px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  &__advantage {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__icon {
+    fill: var(--brand-green);
+    width: 26px;
+    height: 26px;
+    background-color: var(--background-light-green);
+    padding: 15px;
+    border-radius: 50%;
+  }
+  &__advantage-title {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--black-title);
+    padding-bottom: 10px;
+  }
+  &__photos {
+    position: relative;
+  }
+  &__photo {
+    position: absolute;
+    top: -20%;
+    left: 75%;
+    height: 100%;
+  }
+}
