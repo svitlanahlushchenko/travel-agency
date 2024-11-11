@@ -16,3 +16,27 @@
     padding: 120px 0 170px;
   }
 }
+
+.general-section {
+  &__container {
+    display: flex;
+    padding: 120px 0 320px;
+    gap: 20px;
+  }
+  &__photo-card {
+    position: relative;
+  }
+  &__sale {
+    position: absolute;
+    top: 0;
+  }
+  &__title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--black-title);
+  }
+  &__quetion-card {
+    padding-bottom: 120px;
+  }
+}

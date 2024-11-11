@@ -25,6 +25,7 @@
   outline: none;
   box-shadow: none;
 }
+
 .accordion-item {
   margin-bottom: 10px;
   overflow: hidden;
@@ -32,6 +33,7 @@
   max-width: 530px;
 }
 
+.accordion-item.closed .accordion-toggle,
 .accordion-item.open .accordion-toggle {
   color: var(--black-title);
   border: none;
@@ -40,16 +42,12 @@
   font-size: 17px;
   background-color: transparent;
   padding: 20px;
-}
-
-.accordion-item.closed .accordion-toggle {
-  color: var(--black-title);
-  border: none;
-  font-family: 'Rubik';
-  font-weight: 500;
-  font-size: 17px;
-  background-color: transparent;
-  padding: 20px;
+  border-bottom: 1px solid var(--black-title);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
 }
 
 .accordion-content {

@@ -294,6 +294,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <sectiom className='activities-section big-container'></sectiom>
     </section>
   );
 };
