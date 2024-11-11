@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/App.css';
 import HotelsSlider from '../components/Slider';
 import { Link } from 'react-router-dom';
+import AdvantagesCard from '../components/Advantages-cars';
 
 const Home = () => {
   return (
@@ -122,7 +123,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='hotels-section container'>
+      <section className='hotels-section big-container'>
         <div className='hotels-section__container'>
           <h2 className='section-title'>Ultimate Travel Experience</h2>
           <p className='hotels-section__text'>
@@ -275,6 +276,21 @@ const Home = () => {
                 className='specials-section__green-back'
               ></img>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='advantages-section container'>
+        <div className='advantages-section__container'>
+          <div className='advantages-section__photo-container'>
+            <img
+              src='/images/couple-near-see.jpg'
+              alt='Happy couple'
+              className='advantages-section__photo'
+            ></img>
+          </div>
+          <div className='advantages-section__card'>
+            <AdvantagesCard />
           </div>
         </div>
       </section>

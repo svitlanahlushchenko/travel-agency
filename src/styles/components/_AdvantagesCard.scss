@@ -1,0 +1,64 @@
+.card {
+  background-color: #f3f8f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 35px;
+  min-height: 660px;
+  border-radius: 20px;
+}
+.card-title {
+  font-family: 'Rubik';
+  font-weight: 600;
+  font-size: 38px;
+  color: var(--black-title);
+  max-width: 530px;
+}
+.tablist {
+  display: flex;
+  padding: 30px 40px;
+  justify-content: center;
+}
+
+.react-tabs__tab:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  max-width: 530px;
+}
+
+.accordion-item.open .accordion-toggle {
+  color: var(--black-title);
+  border: none;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.accordion-item.closed .accordion-toggle {
+  color: var(--black-title);
+  border: none;
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.accordion-item.open .accordion-content {
+  max-height: 760px;
+}

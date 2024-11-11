@@ -2,10 +2,12 @@
 @import './utils/base';
 @import './utils/fonts';
 
+@import './components/AdvantagesCard';
 @import './components/buttons';
 @import './components/section-title';
 @import './components/slider';
 
+@import './layouts/advantages-section';
 @import './layouts/container';
 @import './layouts/footer';
 @import './layouts/header';

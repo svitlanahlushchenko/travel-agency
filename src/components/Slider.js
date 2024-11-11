@@ -93,13 +93,14 @@ const HotelsSlider = () => {
               </svg>
               <p>Free Wifi</p>
             </div>
+            <div className='service'>
+              <svg className='service-logo'>
+                <use xlinkHref='/images/icons.svg#icon-home-phone'></use>{' '}
+              </svg>
+              <p>Phone</p>
+            </div>
           </div>
-          <div className='service'>
-            <svg className='service-logo'>
-              <use xlinkHref='/images/icons.svg#icon-home-phone'></use>{' '}
-            </svg>
-            <p>Phone</p>
-          </div>
+
           <div className='hotel-room'>
             <div className='room'>
               <h4 className='room-title'>Sea View</h4>
@@ -173,13 +174,14 @@ const HotelsSlider = () => {
               </svg>
               <p>Free Wifi</p>
             </div>
+            <div className='service'>
+              <svg className='service-logo'>
+                <use xlinkHref='/images/icons.svg#icon-home-phone'></use>{' '}
+              </svg>
+              <p>Phone</p>
+            </div>
           </div>
-          <div className='service'>
-            <svg className='service-logo'>
-              <use xlinkHref='/images/icons.svg#icon-home-phone'></use>{' '}
-            </svg>
-            <p>Phone</p>
-          </div>
+
           <div className='hotel-room'>
             <div className='room'>
               <h4 className='room-title'>Family Room</h4>
@@ -247,13 +249,14 @@ const HotelsSlider = () => {
               </svg>
               <p>Free Wifi</p>
             </div>
+            <div className='service'>
+              <svg className='service-logo'>
+                <use xlinkHref='/images/icons.svg#icon-home-phone'></use>{' '}
+              </svg>
+              <p>Phone</p>
+            </div>
           </div>
-          <div className='service'>
-            <svg className='service-logo'>
-              <use xlinkHref='/images/icons.svg#icon-home-phone'></use>{' '}
-            </svg>
-            <p>Phone</p>
-          </div>
+
           <div className='hotel-room'>
             <div className='room'>
               <h4 className='room-title'>Couple Room</h4>

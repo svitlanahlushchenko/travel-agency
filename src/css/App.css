@@ -110,6 +110,91 @@ li {
   font-weight: 400;
   src: url("../fonts/satisfy-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+.card {
+  background-color: #f3f8f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 60px 35px;
+  min-height: 660px;
+  border-radius: 20px;
+}
+
+.card-title {
+  font-family: "Rubik";
+  font-weight: 600;
+  font-size: 38px;
+  color: var(--black-title);
+  max-width: 530px;
+}
+
+.tablist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.react-tabs__tab:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+  max-width: 530px;
+}
+
+.accordion-item.open .accordion-toggle {
+  color: var(--black-title);
+  border: none;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.accordion-item.closed .accordion-toggle {
+  color: var(--black-title);
+  border: none;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 760px;
+}
+
 .button {
   color: white;
   background-color: var(--brand-green);
@@ -233,7 +318,7 @@ li {
 }
 
 .next-button {
-  right: 20px;
+  right: 25px;
 }
 
 .prev-button {
@@ -296,6 +381,8 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -377,6 +464,37 @@ li {
   font-size: 16px;
   color: var(--gray-text);
   text-decoration: line-through;
+}
+
+.advantages-section__container {
+  padding-bottom: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.advantages-section__photo-container {
+  position: relative;
+  display: inline-block;
+}
+.advantages-section__photo-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.advantages-section__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.advantages-section__card {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  max-width: 760px;
 }
 
 .container {

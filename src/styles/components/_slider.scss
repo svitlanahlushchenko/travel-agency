@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 .next-button {
-  right: 20px;
+  right: 25px;
 }
 
 .prev-button {
@@ -75,6 +75,7 @@
 }
 .services {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
   padding-bottom: 10px;

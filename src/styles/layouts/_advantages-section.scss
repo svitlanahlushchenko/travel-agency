@@ -1,0 +1,30 @@
+.advantages-section {
+  &__container {
+    padding-bottom: 180px;
+    display: flex;
+  }
+  &__photo-container {
+    position: relative;
+    display: inline-block;
+  }
+  &__photo-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  &__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  &__card {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    max-width: 760px;
+  }
+}
