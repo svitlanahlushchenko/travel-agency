@@ -17,14 +17,17 @@ const Home = () => {
               Specials!
             </h1>
           </div>
-          <div className='hero-section__offers'>
+          <nav className='hero-section__offers'>
             <div className='hero-section__offer'>
               <svg className='hero-section__icon'>
                 <use xlinkHref='/images/icons.svg#icon-tour'></use>{' '}
               </svg>
               <p className='hero-section__offer-name'>Tour</p>
             </div>
-            <div className='hero-section__offer'>
+            <div
+              className='hero-section__offer'
+              onClick={() => (window.location.href = '#hotels')}
+            >
               <svg className='hero-section__icon'>
                 <use xlinkHref='/images/icons.svg#icon-hotel'></use>{' '}
               </svg>
@@ -36,7 +39,10 @@ const Home = () => {
               </svg>
               <p className='hero-section__offer-name'>Visa</p>
             </div>
-            <div className='hero-section__offer'>
+            <div
+              className='hero-section__offer'
+              onClick={() => (window.location.href = '#activities')}
+            >
               <svg className='hero-section__icon'>
                 <use xlinkHref='/images/icons.svg#icon-activities'></use>{' '}
               </svg>
@@ -48,12 +54,12 @@ const Home = () => {
               </svg>
               <p className='hero-section__offer-name'>Transport</p>
             </div>
-          </div>
+          </nav>
         </div>
       </section>
 
       <section className='info-section container'>
-        <div className='info-section__container'>
+        <main className='info-section__container'>
           <div className='info-section__description'>
             <h2 className='section-title'>Who We Are</h2>
             <p>
@@ -120,10 +126,10 @@ const Home = () => {
               alt='Photo'
             ></img>
           </div>
-        </div>
+        </main>
       </section>
 
-      <section className='hotels-section big-container'>
+      <section className='hotels-section big-container' id='hotels'>
         <div className='hotels-section__container'>
           <h2 className='section-title'>Ultimate Travel Experience</h2>
           <p className='hotels-section__text'>
@@ -174,7 +180,6 @@ const Home = () => {
               <button className='button'>All Destination</button>
             </Link>
           </div>
-
           <div className='location-section__cards'>
             <div className='location-section__card'>
               <h3 className='location-section__card-title'>Sweden</h3>
@@ -182,21 +187,18 @@ const Home = () => {
               <img src='/images/Sweden.jpg' alt='Sweden'></img>
               <button className='location-section__button'>View Details</button>
             </div>
-
             <div className='location-section__card'>
               <h3 className='location-section__card-title'>Japan</h3>
               <p className='location-section__tours-left'>2 Tour</p>
               <img src='/images/Japan.jpg' alt='Japan'></img>
               <button className='location-section__button'>View Details</button>
             </div>
-
             <div className='location-section__card'>
               <h3 className='location-section__card-title'>India</h3>
               <p className='location-section__tours-left'>1 Tour</p>
               <img src='/images/India.jpg' alt='India'></img>
               <button className='location-section__button'>View Details</button>
             </div>
-
             <div className='location-section__card'>
               <h3 className='location-section__card-title'>Brazil</h3>
               <p className='location-section__tours-left'>1 Tour</p>
@@ -242,7 +244,7 @@ const Home = () => {
                   alt='Orange sales'
                   className='specials-section__orange-back'
                 ></img>
-                <button className='specials-section__orange-button'>
+                <button className='specials-section__orange-button button'>
                   View This Trip
                 </button>
               </div>
@@ -258,7 +260,7 @@ const Home = () => {
                   alt='Blue Sales'
                   className='specials-section__blue-back'
                 ></img>
-                <button className='specials-section__blue-button'>
+                <button className='specials-section__blue-button button'>
                   View This Trip
                 </button>
               </div>
@@ -295,7 +297,10 @@ const Home = () => {
         </div>
       </section>
 
-      <sectiom className='activities-section big-container'></sectiom>
+      <section
+        className='activities-section big-container'
+        id='activities'
+      ></section>
     </section>
   );
 };

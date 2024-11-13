@@ -1,10 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/App.css';
 
 const Footer = () => {
+  const [inputValue, setInputValue] = useState('');
+
+  const ChangeEmail = event => {
+    setInputValue(event.target.value);
+  };
+
   return (
     <footer className='footer big-container'>
+      {/* <div className='footer__newsletter'>
+        <h2 className='footer__newsletter-title'>Join The Newsletter</h2>
+        <p className='footer__newsletter-text'>
+          To receive our best monthly deals
+        </p>
+        <div className='footer__input-container'>
+          <label htmlFor='email'></label>
+          <input
+            className='footer__input'
+            id='email'
+            type='email'
+            value={inputValue}
+            onChange={ChangeEmail}
+            placeholder='Enter your email address...'
+          ></input>
+          <button className='footer__newsletter-button'>
+            <svg className='footer__newsletter-button-icon'>
+              <use xlinkHref='/images/icons.svg#icon-arrow'></use>{' '}
+            </svg>
+          </button>
+        </div>
+      </div> */}
       <div className='footer__container'>
         <div className='footer__book'>
           <img src='/images/main-logo-white.svg' alt='Logo' />

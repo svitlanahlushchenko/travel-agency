@@ -1,5 +1,66 @@
 .footer {
   background-color: black;
+
+  &__newsletter {
+    position: absolute;
+    background-image: url('/public/images/newsletter-back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 400px;
+    border-radius: 25px;
+    left: 50%;
+    top: -10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__newsletter-title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: var(--black-title);
+  }
+  &__newsletter-text {
+    color: var(--black-title);
+    padding: 5px 0 20px;
+  }
+  &__input-container {
+    position: relative;
+    display: flex;
+    border: 2px solid var(--brand-green);
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+
+  &__input {
+    padding: 18px 320px 18px 20px;
+    border: none;
+    outline: none;
+  }
+  &__newsletter-button {
+    position: absolute;
+    right: -3px;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--brand-green);
+    fill: white;
+    cursor: pointer;
+    border: 1px solid var(--brand-green);
+  }
+  &__newsletter-button:active {
+    fill: var(--brand-green);
+    background-color: white;
+    transform: scale(0.95);
+  }
+  &__newsletter-button-icon {
+    width: 22px;
+    height: 22px;
+    padding: 15px;
+  }
   &__container {
     display: flex;
     gap: 100px;

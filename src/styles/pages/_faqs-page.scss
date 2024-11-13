@@ -30,6 +30,11 @@
     position: absolute;
     top: 0;
   }
+  &__button {
+    position: absolute;
+    top: 70px;
+    right: 10%;
+  }
   &__title {
     font-family: 'Rubik';
     font-weight: 700;

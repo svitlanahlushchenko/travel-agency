@@ -1,3 +1,7 @@
+/* Стили slick-carousel */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
 .hero-section {
   background-image: url('/public/images/hero-secondary-background.png');
   background-size: cover;
@@ -15,4 +19,104 @@
     color: white;
     padding: 120px 0 170px;
   }
+}
+
+.destination-section {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 120px 0 320px;
+    align-items: center;
+  }
+  &__card {
+    position: relative;
+    width: calc(25% - 20px);
+    max-width: 302px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  &__photo {
+    position: relative;
+    display: inline-block;
+  }
+  &__info {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+  }
+  &__text {
+    color: var(--brand-green);
+    font-family: 'Rubik';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  &__title {
+    color: white;
+    font-family: 'Rubik';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  &__tour-left {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: 'Rubik';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--black-title);
+    background-color: var(--orange-icon);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+}
+.container {
+  position: relative;
+}
+.slick-slider {
+  width: 100%;
+  position: relative;
+}
+.custom-prev,
+.custom-next {
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+}
+.custom-prev {
+  left: 50%;
+  transform: translateX(-100%) translateY(-50%);
+}
+.custom-next {
+  right: 50%;
+  transform: translateX(100%) translateY(-50%);
+}
+
+.custom-prev-icon,
+.custom-next-icon {
+  width: 14px;
+  height: 14px;
+  padding: 8px;
+  fill: rgba(0, 0, 0, 0.8);
+  display: block;
+  border: 1px solid var(--brand-green);
+  border-radius: 50%;
+}
+
+.custom-prev-icon:hover,
+.custom-next-icon:hover {
+  background-color: var(--brand-green);
+  fill: white;
+  border: 1px solid var(--brand-green);
+}
+
+.custom-prev-icon {
+  transform: rotate(180deg);
 }

@@ -25,6 +25,9 @@ const FAQ = () => {
                 alt='Sale'
                 className='general-section__sale'
               ></img>
+              <button className='general-section__button button'>
+                Book Now
+              </button>
             </div>
             <div className='general-section__info'>
               <div className='general-section__quetion-card'>
